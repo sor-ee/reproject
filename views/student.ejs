@@ -1,0 +1,115 @@
+<html lang="en">
+  <head>
+    <title>student</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/student.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <link rel="stylesheet" href="alert/dist/sweetalert.css"> -->
+  </head>
+  
+  <body class="theme-light">
+    <div>
+    <label>
+      <input type="checkbox" />
+      <span class="check"></span>
+    </label>
+  </div>
+  
+  
+
+ 
+        <button id="submit" type="submit" value="Submit New User">
+  
+        </button>
+      
+
+      <div class="top-text">
+        <h1 class="headerShop">Borrow Return</h1>
+        <p class="headertext">ยืม-คืนอุปกรณ์ไอที</p>
+        <img
+          class="img-topic"
+          src="./images/santa.png"
+          alt="wallpaper"
+        />
+        <img
+          class="img-train"
+          src="./images/train.png"
+          alt="train"
+        />
+      </div>
+      <div class="changeColorButton">
+        <button class="colorBT" id="colorBT"></button>
+        <!-- <input type="color" id="colorID" > -->
+      </div>
+      <p id="Userid"></p>
+
+      
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="shopping">Shopping List</p>
+        <p id="totalPrice"></p>
+        <div class="cart-list"></div>
+      </div>
+    </div>
+
+    <div id="products">
+      <script src="javascripts/script.js" type="module"></script>
+      <br> 
+      <div class="holder_wrap_img1">
+        <div class="inner_position_bottom1">
+          <form action="/student" method="post"><br><br><br><br><br><br><br><br><br><br>
+            <h3 align = 'center'><input type="text"  name="ID" placeholder="กรอกรหัสนักศึกษา" required></h3><br>
+            <h2 align = 'center'><button class="button">ตกลง</button></h2>
+            </form><br><br>  
+            </h3>
+          <% if(data == "null"){ %>
+            <p align = 'center'>ไม่มีข้อมูล</p>
+        <% } %>
+        <% if(data != "null"){ %>
+        <form method="post" action="/student/delete<%= data._id%>">
+                <!-- <%= data.product %><br> -->
+                <!-- <%= data.borrowDate %><br> -->
+                <!-- <%= data.returnDate %><br> -->
+                <!-- <%= data.studentID %><br> -->
+                <!-- <button class="button"><a href="/home">ยกเลิก</button></a> -->
+                <!-- <button class="button" type="submit"> ตกลง</button>    -->
+            <!-- <div class="inner_position_bottom1"> -->
+            <div class="text">
+            <br><h3 align = 'center'><label for="fname">&nbsp; &nbsp; &nbsp; &nbsp; รหัสน.ศ</label>
+                <div class="fc">
+                <h3 align = 'center'><label for="fname">&nbsp; &nbsp; &nbsp; &nbsp; <%= data.studentID %><br></label>
+            <!-- <input type="text" id="fname" name="fname"></h3> -->
+                </div>
+            <br><br><h3 align = 'center'><label for="fname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;อุปกรณ์ที่ยืม</label>
+                <div class="fc">
+            <h3 align = 'center'><label for="fname">&nbsp; &nbsp; &nbsp; &nbsp; <%= data.product %><br></label>
+            <!-- <input type="text" id="fname" name="fname"></h3> -->
+                </div>
+            <br><br><h3 align = 'center'><label for="fname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันที่ยืม </label></align>
+                <div class="fc">
+                <h3 align = 'center'><label for="fname">&nbsp; &nbsp; &nbsp; &nbsp; <%= data.borrowDate %><br></label>
+            <!-- <input type="date" id="fname" name="fname"></h3> -->
+                </div>
+            <br><br><h3 align = 'center'><label for="fname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วันกำหนดคืน </label></align>
+                <div class="fc">
+                <h3 align = 'center'><label for="fname">&nbsp; &nbsp; &nbsp; &nbsp; <%= data.returnDate %><br></label>
+                </div>
+            </div>
+            <!-- </div> -->
+            <div class="holder_wrap_img">
+            <img src="images/123.png">
+            </div>
+        <% } %>    
+         </form>
+         <form method="post" action="/">
+          <button class="buttonlog">logout</button></form>
+        </div>
+        <img src="images/123.png">
+        </div>
+    </div>
+
+  </body>
+</html>

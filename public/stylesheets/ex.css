@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+.wallpaper{
+    width: 100%;
+    height: 100%;
+    
+}
+.call{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    left: 800px;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #879288;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button:active {
+    background-color: #879288;
+    box-shadow: 0 5px #999;
+    transform: translateY(4px);
+}
+.button:hover {background-color: #000000}
+.alert{
+ padding: 0%;
+ text-align: center;   
+}
+.text{
+    font-size: 60px;
+    text-align: center
+}
+input{
+    width: 50%;
+    height: 40px;
+}
+.inner_position_bottom{
+    margin: 0 auto;
+    position:absolute;
+    height:50px;
+    z-index:999;
+}
+.holder_wrap_img{
+    position:absolute;
+    left: 39%;
+    top: 70%;
+}
+.holder_wrap_img1{
+    position:absolute;/* กำหนดการจัดตำแหน่งส่วนพื้นที่คลุมเนื้อหารุปและข้อความซ้อนทับ */
+    left: 39%;
+    bottom: 3%;
+    height: 70%;
+}
+.inner_position_bottom1{
+    margin: 0 auto;
+    position:absolute;
+    height:50px; 
+    width:100%;
+}
+* a{
+    text-decoration: none;
+    color: #ffffff;
+}
