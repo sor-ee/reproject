@@ -40,7 +40,7 @@ router.post('/', [
     var result="";
     res.render('borrow',{data:result});
   });
-  router.post('/send(:_id)', function(req, res, next) {
+  router.post('/send', function(req, res, next) {
     var ct1=db.get('admin/product')
     ct1.findOne({_id:req.params._id},{projection:{name:1}}).then(result =>{
       console.log(result)

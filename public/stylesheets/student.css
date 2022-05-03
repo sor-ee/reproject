@@ -341,11 +341,6 @@ input[type="checkbox"]:checked ~ .check:after {
   color: white;
 }
 
-
-
-
-
-
 #textUser {
   font-weight: bold;
 }
@@ -720,11 +715,6 @@ input[type="checkbox"]:checked ~ .check:after {
   color: white;
 }
 
-
-
-
-
-
 #textUser {
   font-weight: bold;
 }
@@ -789,7 +779,7 @@ input[type="checkbox"]:checked ~ .check:after {
     height: 100%;
 }
 .text{
-    font-size: 50px;
+    font-size: 20px;
     text-align: center
 }
 .button {
@@ -853,7 +843,7 @@ input[type="checkbox"]:checked ~ .check:after {
     /* left: 58%; */
     right: 20%;
     width: 40%;
-    top: 55%;
+    top: 95%;
 }
 .inner_position_bottom1{
     margin: 0 auto;
@@ -880,10 +870,4 @@ input[type="checkbox"]:checked ~ .check:after {
 
 .jingle {
    width: 250px;
-}
-.text{
-    right: 20%;
-    width: 100%;
-    top: 55%;
-    font-size: small;
 }

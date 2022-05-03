@@ -58,7 +58,6 @@
     <div id="products">
       <script src="javascripts/script.js" type="module"></script>
       <br> 
-      <div class="holder_wrap_img1">
         <div class="inner_position_bottom1">
           <form action="/student" method="post"><br><br><br><br><br><br><br><br><br><br>
             <h3 align = 'center'><input type="text"  name="ID" placeholder="กรอกรหัสนักศึกษา" required></h3><br>
@@ -70,13 +69,6 @@
         <% } %>
         <% if(data != "null"){ %>
         <form method="post" action="/student/delete<%= data._id%>">
-                <!-- <%= data.product %><br> -->
-                <!-- <%= data.borrowDate %><br> -->
-                <!-- <%= data.returnDate %><br> -->
-                <!-- <%= data.studentID %><br> -->
-                <!-- <button class="button"><a href="/home">ยกเลิก</button></a> -->
-                <!-- <button class="button" type="submit"> ตกลง</button>    -->
-            <!-- <div class="inner_position_bottom1"> -->
             <div class="text">
             <br><h3 align = 'center'><label for="fname">&nbsp; &nbsp; &nbsp; &nbsp; รหัสน.ศ</label>
                 <div class="fc">
@@ -100,15 +92,16 @@
             </div>
             <!-- </div> -->
             <div class="holder_wrap_img">
-            <img src="images/123.png">
+            <!-- <img src="images/123.png"> -->
             </div>
         <% } %>    
          </form>
          <form method="post" action="/">
           <button class="buttonlog">logout</button></form>
         </div>
+        <!-- <div class="holder_wrap_img1">
         <img src="images/123.png">
-        </div>
+        </div> -->
     </div>
 
   </body>
